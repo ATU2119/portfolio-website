@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: linear-gradient(180deg, #2c2c2c, #1a1a1a);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #121212;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styling */
+  .about-page section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, red, blue, purple);
+    margin: 10px 0 20px;
+  }
+  
+  .content {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .item {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .item h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #d3d3d3;
+  }
+  
+  .item strong {
+    color: white;
+  }
+  
+  .item em {
+    font-style: italic;
+    color: #aaaaaa;
+  }
+  

@@ -46,7 +46,8 @@ body {
   .line {
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, red, blue, purple);
+    /* background: linear-gradient(90deg, red, blue, purple); */
+    background: #ffc5d3;
     margin: 10px 0 20px;
   }
   

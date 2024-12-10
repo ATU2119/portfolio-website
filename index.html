@@ -5,27 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <link rel="stylesheet" href="./css/index.css">
+
+  <!-- Include Slick Carousel Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="logo">WONDERLAND</div>
+    <div class="logo"></div>
     <nav class="nav">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="skills.html">SKILLS</a>
-      <a href="#highlights">HIGHLIGHTS</a>
-      <a href="portfolio.html">PORTFOLIO</a>
-      <a href="#references">REFERENCES</a>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#highlights">EXPERIENCE</a>
+      <a href="#portfolio">PROJECTS</a>
     </nav>
   </header>
 
+  <!-- Home Section -->
   <main id="home" class="landing">
     <div class="intro">
-        <h1 class="large-heading">I'm Alice, a <span class="highlight">Computer Science Student</span></h1>
+      <h1 class="large-heading">I'm Alice, a <span class="highlight">Computer Science Student</span></h1>
       <p>
         "I am a Senior at Cornell University planning to pursue a Master's in Computer Science. Throughout my studies, 
         I have been focusing on machine learning, artificial intelligence, computer graphics, and computational biology and genetics. I am currently involved
-        in computation biology research working with Professor Shaila Musharoff and currently working on completeing a thesis and publication in the next 6 months."
+        in computational biology research working with Professor Shaila Musharoff and currently working on completing a thesis and publication in the next 6 months."
       </p>
       <div class="stats">
         <div>
@@ -43,9 +47,132 @@
       </div>
     </div>
     <div class="photo">
-        <img src="sunset_cropped.png" alt="Alice" width="800" height="auto">
+      <img src="sunset_cropped.png" alt="Alice" width="800" height="auto">
       <p>Hit the beach to swim but ended up freezing, huddled in a towel and blanket like a popsicle.</p>
     </div>
   </main>
+
+  <!-- About Section -->
+  <section id="about" class="about-page">
+    <h1>About Me</h1>
+    <div class="line"></div>
+
+    <section class="education">
+      <h1>Education</h1>
+      <div class="line"></div>
+      <div class="content">
+        <div class="item">
+          <h2>B.S. in Computer Science</h2>
+          <p><strong>First Concentration in Electrical and Computer Engineering</strong></p>
+          <p><strong>Second Concentration in Data Science</strong></p>
+          <p><strong>Third Concentration in Artificial Intelligence</strong></p>
+          <p>Cornell University</p>
+          <p><em>May 2025</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="experience">
+      <h1>Experience - Computer Science</h1>
+      <div class="line"></div>
+      <div class="content">
+        <div class="item">
+          <h2>Undergraduate Teaching Assistant</h2>
+          <p><strong>CS 4620 - Introduction to Computer Graphics</strong></p>
+          <p>Professor Abe Davis - Cornell University</p>
+          <p><em>Aug 2024 - Present</em></p>
+        </div>
+        <div class="item">
+          <h2>Machine Learning Engineer</h2>
+          <p><strong>Cornell Data Science Project Team</strong></p>
+          <p>Cornell University</p>
+          <p><em>Feb 2023 - Present</em></p>
+        </div>
+        <div class="item">
+          <h2>Undergraduate Research Assistant</h2>
+          <p><strong>Computational Biology and Genetics</strong></p>
+          <p>Professor Shaila Musharoff - Cornell University</p>
+          <p><em>October 2024 - Present</em></p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h1>Technical Competencies</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h2>Languages</h2>
+        <p>Python, Solidity, C++, Java, C, JavaScript, Bash, MySQL, Oracle PL/SQL, Assembly, HTML, CSS, JSON, YAML, MATLAB</p>
+      </div>
+      <div class="skill-card">
+        <h2>Coding Methodologies</h2>
+        <p>Test-Driven Development, OWASP security knowledge, Agile, Clean Code, Useful Comments, Ability to adhere to ISO and other standards</p>
+      </div>
+      <div class="skill-card">
+        <h2>Project Management</h2>
+        <p>SCRUM, Maven, GitHub, Jupyter Notebooks, Kanban, Presentation Skills, Team Leadership/Management, Cross-Team Communication</p>
+      </div>
+      <div class="skill-card">
+        <h2>Interests</h2>
+        <p>Software Engineering, Cyber-Security, Machine Learning, Data Visualization, Artificial Intelligence, Blockchain, Cryptocurrency</p>
+      </div>
+      <div class="skill-card">
+        <h2>Relevant Courses</h2>
+        <p>Data Structures, Object Oriented Design, Operating Systems, Machine Learning, Systems Security</p>
+      </div>
+      <div class="skill-card">
+        <h2>Development</h2>
+        <p>Linux, Windows, Docker, React, Kubernetes, Matplotlib, Pandas, Tensorflow, GPT, Generative AI Tools</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="portfolio">
+    <h1>My Latest Projects</h1>
+    <div class="carousel">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="./images/project1.png" alt="Project 1">
+        <h2>Project Name 1</h2>
+        <p>Brief description of the project.</p>
+        <a href="#">View Project</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="./images/project2.png" alt="Project 2">
+        <h2>Project Name 2</h2>
+        <p>Brief description of the project.</p>
+        <a href="#">View Project</a>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="./images/project3.png" alt="Project 3">
+        <h2>Project Name 3</h2>
+        <p>Brief description of the project.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Slick Carousel Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: true
+      });
+    });
+  </script>
 </body>
 </html>

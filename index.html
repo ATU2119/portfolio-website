@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./index.css">
 
   <!-- Include Slick Carousel Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -12,167 +12,245 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo"></div>
+    <a href="#home" class="logo">
+      <img src="logo_image.png" alt="Logo" class="logo-image">
+    </a>
     <nav class="nav">
       <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#skills">SKILLS</a>
-      <a href="#highlights">EXPERIENCE</a>
-      <a href="#portfolio">PROJECTS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#skill">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#hobbies">HOBBIES</a>
     </nav>
   </header>
 
   <!-- Home Section -->
   <main id="home" class="landing">
     <div class="intro">
-      <h1 class="large-heading">I'm Alice, a <span class="highlight">Computer Science Student</span></h1>
-      <p>
-        "I am a Senior at Cornell University planning to pursue a Master's in Computer Science. Throughout my studies, 
-        I have been focusing on machine learning, artificial intelligence, computer graphics, and computational biology and genetics. I am currently involved
-        in computational biology research working with Professor Shaila Musharoff and currently working on completing a thesis and publication in the next 6 months."
+      <p class="intro-text" style="font-size: 16px;">Hi, my name is</p>
+      <h1 class="large-heading">Alice Um.</h1>
+      <h2 class="tagline">I'm driven by computer science, research, and innovation.</h2>
+      <p class="description" style="font-size: 16px; margin-bottom: 15px">
+        "I am a senior at Cornell University, focusing on machine learning, electrical and computer engineering, data science, and computational biology with AI, and plan to pursue a Master's in Computer Science. I am currently conducting research with Professor Shaila Musharoff and working on a thesis and publication to be completed in the next six months."
       </p>
       <div class="stats">
-        <div>
+        <div class="stat">
           <h2>3+</h2>
-          <p>Computer Science: <br> Years of Experience</p>
+          <p>Years of Experience<br> in Computer Science</p>
         </div>
-        <div>
+        <div class="stat">
           <h2>14+</h2>
-          <p>Projects <br> Completed</p>
+          <p>Projects<br> Completed</p>
         </div>
-        <div>
-          <h2>3+</h2>
-          <p>Computational Biology: <br> Years of Experience</p>
+        <div class="stat">
+          <h2>2+</h2>
+          <p>Years of Experience<br> in Computational Biology</p>
         </div>
       </div>
+      <a href="#education" class="start-browsing">
+        <div class="text">START BROWSING</div>
+        <div class="arrow">→</div>
+      </a>
     </div>
     <div class="photo">
       <img src="sunset_cropped.png" alt="Alice" width="800" height="auto">
-      <p>Hit the beach to swim but ended up freezing, huddled in a towel and blanket like a popsicle.</p>
+      <p class="photo-caption">
+        Hit the beach to swim but ended up freezing, huddled in a towel and blanket like a popsicle.
+      </p>
     </div>
   </main>
+  
+  <div class="section-divider" style = "height: 1px; margin-top: 0px; margin-bottom: -80px"></div>
 
   <!-- About Section -->
-  <section id="about" class="about-page">
-    <h1>About Me</h1>
-    <div class="line"></div>
-
+  <section id="education" class="education-page">
     <section class="education">
       <h1>Education</h1>
-      <div class="line"></div>
       <div class="content">
-        <div class="item">
-          <h2>B.S. in Computer Science</h2>
-          <p><strong>First Concentration in Electrical and Computer Engineering</strong></p>
-          <p><strong>Second Concentration in Data Science</strong></p>
-          <p><strong>Third Concentration in Artificial Intelligence</strong></p>
-          <p>Cornell University</p>
-          <p><em>May 2025</em></p>
+        <div class="item" style = "margin-left: -585px; width: 560px; height: 320px; margin-top: 30px">
+          <div class="item-header">
+            <div class="item-text">
+              <h2>B.S. in Computer Science</h2>
+              <p>Cornell University</p>
+              <p><strong>Expected Graduation Date:</strong></p>
+              <p>Dec 2025</p>
+              <p class="coursework" style="margin-top:20px">
+                <strong>Core Coursework:</strong>
+              </p>
+            </div>
+            <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+              <img src="cornell.png" alt="University Logo" class="item-image">
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Linear Algebra</span>
+            <span class="tag">Intro to Python</span>
+            <span class="tag">Discrete Structures</span>
+            <span class="tag">Object-Oriented Programming and Data Structures</span>
+            <span class="tag">Data Structures and Functional Programming</span>
+            <span class="tag">Digital Systems</span>
+            <span class="tag">Operating Systems</span>
+            <span class="tag">Theory of Algorithms</span>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section id="highlights" class="experience">
-      <h1>Experience - Computer Science</h1>
-      <div class="line"></div>
-      <div class="content">
-        <div class="item">
-          <h2>Undergraduate Teaching Assistant</h2>
-          <p><strong>CS 4620 - Introduction to Computer Graphics</strong></p>
-          <p>Professor Abe Davis - Cornell University</p>
-          <p><em>Aug 2024 - Present</em></p>
+        <div class="item" style="margin-left: 640px; margin-top: -339px; width: 560px; height: 320px">
+          <div class="item-header">
+            <div class="item-text">
+              <h2>Electrical and Computer</h2>
+              <h2>Engineering Minor</h2>
+              <p>Cornell University</p>
+              <p class="coursework" style="margin-top:24px">
+                <strong>Core Coursework:</strong>
+              </p>
+            </div>
+            <div class="item-image-wrapper" style = "margin-right: -10px; margin-top: -115px">
+              <img src="ece.png" alt="University Logo" class="item-image">
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Foundations of Robotics</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">Probability and Inference for Random Signals and Systems</span>
+            <span class="tag">Data Science for Engineers</span>
+            <span class="tag">Optimal System Analysis and Design</span>
+            <span class="tag">Digital Logic and Computer Organization</span>
+          </div>
         </div>
-        <div class="item">
-          <h2>Machine Learning Engineer</h2>
-          <p><strong>Cornell Data Science Project Team</strong></p>
-          <p>Cornell University</p>
-          <p><em>Feb 2023 - Present</em></p>
+        <div class="item" style="margin-left: 640px; margin-top: 35px; width: 560px; height: 320px">
+          <div class="item-header">
+            <div class="item-text">
+              <h2>Artificial Intelligence</h2>
+              <h2>Minor</h2>
+              <p>Cornell University</p>
+              <p class="coursework" style="margin-top:28px">
+                <strong>Core Coursework:</strong>
+              </p>
+            </div>
+            <div class="item-image-wrapper" style = "margin-right: -10px; margin-top: -120px">
+              <img src="ai.png" alt="University Logo" class="item-image">
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Practicum in Artificial Intelligence</span>
+            <span class="tag">Language and Information</span>
+            <span class="tag">Choices and Consequences in Computing</span>
+            <span class="tag">Foundations of AI Reasoning and Decision-Making</span>
+            <span class="tag">Data Mining and Machine Learning</span>
+          </div>
         </div>
-        <div class="item">
-          <h2>Undergraduate Research Assistant</h2>
-          <p><strong>Computational Biology and Genetics</strong></p>
-          <p>Professor Shaila Musharoff - Cornell University</p>
-          <p><em>October 2024 - Present</em></p>
+        <div class="item" style = "margin-left: -585px; margin-top: -340px; width: 560px; height: 320px">
+          <div class="item-header">
+            <div class="item-text">
+              <h2>Data Science Minor</h2>
+              <p>Cornell University</p>
+              <p class="coursework" style="margin-top:55px">
+                <strong>Core Coursework:</strong>
+              </p>
+            </div>
+            <div class="item-image-wrapper">
+              <img src="ds.png" alt="University Logo" class="item-image" style = >
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Linear Algebra</span>
+            <span class="tag">Intro to Python</span>
+            <span class="tag">Discrete Structures</span>
+            <span class="tag">Object-Oriented Programming and Data Structures</span>
+            <span class="tag">Data Structures and Functional Programming</span>
+            <span class="tag">Digital Systems</span>
+            <span class="tag">Operating Systems</span>
+            <span class="tag">Theory of Algorithms</span>
+          </div>
         </div>
       </div>
     </section>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
+  <div class="section-divider" style = "height: 1px; margin-top: -80px; margin-bottom: -80px"></div>
+
+  <!-- Experience Section -->
+  <section id="education" class="education-page">
+    <section class="education">
+      <h1>Experience</h1>
+      <div class="content">
+        <div class="item">
+          <!-- Content for first item (B.S. in Computer Science) -->
+        </div>
+        <div class="item">
+          <!-- Content for second item (B.S. in Computer Science) -->
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
     <h1>Technical Competencies</h1>
-    <div class="skills-grid">
-      <div class="skill-card">
+    <div class="projects-grid">
+      <div class="project-card">
         <h2>Languages</h2>
         <p>Python, Solidity, C++, Java, C, JavaScript, Bash, MySQL, Oracle PL/SQL, Assembly, HTML, CSS, JSON, YAML, MATLAB</p>
       </div>
-      <div class="skill-card">
+      <div class="project-card">
         <h2>Coding Methodologies</h2>
         <p>Test-Driven Development, OWASP security knowledge, Agile, Clean Code, Useful Comments, Ability to adhere to ISO and other standards</p>
       </div>
-      <div class="skill-card">
+      <div class="project-card">
         <h2>Project Management</h2>
         <p>SCRUM, Maven, GitHub, Jupyter Notebooks, Kanban, Presentation Skills, Team Leadership/Management, Cross-Team Communication</p>
       </div>
-      <div class="skill-card">
+      <div class="project-card">
         <h2>Interests</h2>
         <p>Software Engineering, Cyber-Security, Machine Learning, Data Visualization, Artificial Intelligence, Blockchain, Cryptocurrency</p>
       </div>
-      <div class="skill-card">
+      <div class="project-card">
         <h2>Relevant Courses</h2>
         <p>Data Structures, Object Oriented Design, Operating Systems, Machine Learning, Systems Security</p>
       </div>
-      <div class="skill-card">
+      <div class="project-card">
         <h2>Development</h2>
         <p>Linux, Windows, Docker, React, Kubernetes, Matplotlib, Pandas, Tensorflow, GPT, Generative AI Tools</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="portfolio">
-    <h1>My Latest Projects</h1>
-    <div class="carousel">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="./images/project1.png" alt="Project 1">
-        <h2>Project Name 1</h2>
-        <p>Brief description of the project.</p>
-        <a href="#">View Project</a>
-      </div>
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="./images/project2.png" alt="Project 2">
-        <h2>Project Name 2</h2>
-        <p>Brief description of the project.</p>
-        <a href="#">View Project</a>
-      </div>
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="./images/project3.png" alt="Project 3">
-        <h2>Project Name 3</h2>
-        <p>Brief description of the project.</p>
-        <a href="#">View Project</a>
-      </div>
+<!-- Hobbies Section -->
+<section id="hobbies">
+  <h1>Hobbies & Interests</h1>
+  <div class="carousel">
+    <div class="hobby-card">
+      <h2>Rock Climbing</h2>
+      <p>I enjoy solving climbing problems and spending time outdoors.</p>
     </div>
-  </section>
+    <div class="hobby-card">
+      <h2>Reading</h2>
+      <p>From technical papers to novels, I find joy in learning and exploring new ideas.</p>
+    </div>
+    <div class="hobby-card">
+      <h2>Singing</h2>
+      <p>Music helps me relax and stay creative; I love performing for friends and family.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Include jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Include Slick Carousel Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Slick Carousel Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <script>
-    $(document).ready(function(){
-      $('.carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        arrows: true
-      });
+<script>
+  $(document).ready(function(){
+    // Initialize carousel for Hobbies
+    $('.carousel').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      arrows: true
     });
-  </script>
+  });
+</script>
 </body>
 </html>

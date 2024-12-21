@@ -8,7 +8,7 @@
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
-  color: black;
+  color: white;
   background: white;
   margin: 0;
   padding: 0;
@@ -90,7 +90,7 @@ html {
 .nav {
   margin-top: 7px;
   margin-bottom: 7px;
-  margin-left: 300px; 
+  margin-left: 295px; 
   display: flex; 
   gap: 15px;
 }
@@ -193,16 +193,17 @@ html {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Experience Section */
+/* Education Section */
 .education-page section {
   padding: 40px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: bold;
+  margin: 0;
 }
 
 #education {
@@ -231,12 +232,6 @@ h1 {
 }
 
 .education h1 {
-  display: inline-block; 
-  border-bottom: 5px solid #dea5a4; 
-  padding-bottom: 5px; 
-}
-
-.experience h1 {
   display: inline-block; 
   border-bottom: 5px solid #dea5a4; 
   padding-bottom: 5px; 
@@ -273,6 +268,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: -120px;
+  flex: 1;
 }
 
 .item-image {
@@ -284,10 +280,10 @@ h1 {
 
 .tags {
   display: flex;
-  flex-wrap: wrap; /* Allows tags to wrap if needed */
-  gap: 10px; /* Adds space between the tags */
-  margin-top: 10px; /* Space between the image and tags */
-  align-self: stretch; /* Make tags stretch across the full width */
+  flex-wrap: wrap; 
+  gap: 10px; 
+  margin-top: 10px; 
+  align-self: stretch; 
 }
 
 .tag {
@@ -303,8 +299,13 @@ h1 {
 /* Experience Section */
 .experience-page section {
   padding: 40px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+#experience {
+  padding: 90px;
+  text-align: center; 
 }
 
 #experience h1 {
@@ -315,78 +316,223 @@ h1 {
 
 .experience-page .content {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.experience-item {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap; 
 }
 
-.experience-item h2 {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.experience-item .role {
-  font-size: 1rem;
-  color: #666;
-}
-
-.experience-item .dates {
-  font-size: 1rem;
-  color: #aaa;
-  text-align: right;
+.experience h1 {
+  display: inline-block; 
+  border-bottom: 5px solid #dea5a4; 
+  padding-bottom: 5px; 
 }
 
 /* Skills Section */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+.skills-page section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.project-card {
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
+#skills {
+  padding: 90px;
+  text-align: center; 
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+#skills h1 {
+  font-size: 2rem;
+  margin-bottom: 20px; 
+  align-items: center
 }
 
-.project-card h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+.skills-page .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
-.project-card p {
-  font-size: 0.9rem;
-  color: #d3d3d3;
+.skills h1 {
+  display: inline-block; 
+  border-bottom: 5px solid #dea5a4; 
+  padding-bottom: 5px; 
 }
 
 /* Hobbies Section */
-#hobbies {
-  padding: 40px 20px;
-  text-align: center;
+.hobbies-page section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.carousel {
+#hobbies {
+  padding: 90px;
+  text-align: center; 
+}
+
+#hobbies h1 {
+  font-size: 2rem;
+  margin-bottom: 20px; 
+  align-items: center
+}
+
+.hobbies-page .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.hobbies h1 {
+  display: inline-block; 
+  border-bottom: 5px solid #dea5a4; 
+  padding-bottom: 5px; 
+}
+
+/* Projects Section */
+.projects-page section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#projects {
+  padding: 90px;
+  text-align: center; 
+}
+
+#projects h1 {
+  font-size: 2rem;
+  margin-bottom: 20px; 
+  align-items: center
+}
+
+.projects-page .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.projects h1 {
+  display: inline-block; 
+  border-bottom: 5px solid #dea5a4; 
+  padding-bottom: 5px; 
+}
+
+/* Carousel Container */
+.projects-page .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Individual Project Items */
+.project {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 3px solid #dea5a4; /* Bubble border color */
+  border-radius: 10px; /* Slightly rounded corners for the square bubble */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a pop-out effect */
+  text-align: left;
+  margin: 10px; /* Adds spacing between slides */
+  min-height: 200px;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: left;
+}
+
+/* Slick Carousel Navigation Styles */
+/* General styling for both arrow buttons */
+.slick-prev, .slick-next {
+  background-color: #fff; /* White background */
+  border: 2px solid #ccc; /* Border color */
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Adjust size */
+  height: 40px; /* Adjust size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Styling for the arrow text (< and >) */
+.slick-prev span, .slick-next span {
+  font-size: 30px; /* Arrow size */
+  color: #333; /* Arrow color */
+}
+
+/* Hover effect */
+.slick-prev:hover, .slick-next:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+  border-color: #333; /* Darker border on hover */
+}
+
+/* Position adjustments */
+.slick-prev {
+  left: -50px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays above content */
+}
+
+.slick-next {
+  right: -50px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays above content */
+}
+
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  color: black;
+}
+
+/* Slick Dots */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #dea5a4;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .projects-page .carousel {
+    max-width: 100%;
+  }
+
+  .project {
+    padding: 15px;
+    border-width: 2px; /* Slightly thinner border for small screens */
+    text-align: left;
+  }
+
+  .project h2 {
+    font-size: 1.2rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+}
+
+/* .carousel {
   max-width: 600px;
   margin: 20px auto;
   position: relative;
-}
+} */
 
 .hobby-card {
   background-color: #1e1e1e;
@@ -407,21 +553,55 @@ h1 {
   color: #d3d3d3;
 }
 
+
+/* Slick Carousel Navigation Styles */
 .slick-prev, .slick-next {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  border-radius: 50%; /* Circular shape for the arrow buttons */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure the arrows are above other elements */
+  position: absolute;
 }
 
 .slick-prev:hover, .slick-next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+.slick-prev:before, .slick-next:before {
+  content: '←'; /* For the left arrow */
+}
+
+.slick-next:before {
+  content: '→'; /* For the right arrow */
 }
 
 .slick-prev:before, .slick-next:before {
   font-size: 20px;
-  color: white;
+  color: white; /* White color for visibility */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px; /* Font size for the arrow icon */
+  color: black; /* White color for the arrow icon */
+}
+
+/* Positioning */
+.slick-prev {
+  left: -60px; /* Adjust positioning for the left arrow */
+}
+
+.slick-next {
+  right: -60px; /* Adjust positioning for the right arrow */
+}
+
+/* Ensuring Arrows Are Not Hidden */
+.slick-prev, .slick-next {
+  opacity: 1 !important; /* Force arrows to be visible */
+  visibility: visible !important;
 }
 
 * {
@@ -554,3 +734,102 @@ body {
   color: #666;
 }
 
+/* Carousel Container */
+.projects-page .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Individual Project Items */
+.project {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Slick Carousel Navigation Styles */
+.slick-prev, .slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slick-prev:before {
+  content: '←'; 
+}
+
+.slick-next:before {
+  color: black;
+}
+
+/* Slick Dots */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #dea5a4;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .projects-page .carousel {
+    max-width: 100%;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .project h2 {
+    font-size: 1.2rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+}
+
+.movable-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: move;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 600px; /* Adjust to match your background image */
+  height: 400px; /* Adjust to match your background image */
+}
+
+.movable-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: grab;
+}

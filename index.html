@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./css/index.css">
 
   <!-- Include Slick Carousel Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -19,7 +19,7 @@
       <a href="#home">HOME</a>
       <a href="#education">EDUCATION</a>
       <a href="#experience">EXPERIENCE</a>
-      <a href="#skill">SKILLS</a>
+      <a href="#skills">SKILLS</a>
       <a href="#projects">PROJECTS</a>
       <a href="#hobbies">HOBBIES</a>
     </nav>
@@ -63,7 +63,7 @@
   
   <div class="section-divider" style = "height: 1px; margin-top: 0px; margin-bottom: -80px"></div>
 
-  <!-- About Section -->
+  <!-- Education Section -->
   <section id="education" class="education-page">
     <section class="education">
       <h1>Education</h1>
@@ -170,69 +170,334 @@
   <div class="section-divider" style = "height: 1px; margin-top: -80px; margin-bottom: -80px"></div>
 
   <!-- Experience Section -->
-  <section id="education" class="education-page">
-    <section class="education">
+  <section id="experience" class="experience-page">
+    <section class="experience">
       <h1>Experience</h1>
-      <div class="content">
-        <div class="item">
-          <!-- Content for first item (B.S. in Computer Science) -->
+    </section>
+    <div class="item" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: 70px; margin-bottom: 50px; width: 700px; height: 200px;">
+      <!-- Left Section: Experience Name -->
+      <div class="item-text" style="margin-top: 10px; margin-left: -400px">
+        <h3 style="margin: 0;">AI Software Engineer</h3>
+        <p style="margin: 0;">Medical AI</p>
+      </div>
+      <!-- Right Section: Date and Location -->
+      <div class="item-date-location" style="text-align: right; margin-top: -150px; margin-bottom: 10px;margin-left: 450px">
+        <p style="margin: 0;"><strong>Jan 2025 – Jul 2025</strong></p>
+        <p style="margin: 0;">Seoul, South Korea</p>
+      </div>
+      <div class="movable-image" style = "margin-left: 800px; margin-top: 565px; width: 800px; height: 500px">
+        <img src="ekg_ai3.png" alt="University Logo" class="item-image" style = "width: 200px; height: 179px; border-radius: 15px; margin-left: 365px; margin-top: -120px; box-shadow: none">
+      </div>
+      <!-- Description Section -->
+      <div class="item-description" style="width: 100%; padding: 10px; text-align: left;">
+        <p style="margin: 0;">Developed and implemented machine learning models using PyTorch to analyze P waves and T waves in EKG data for cardiovascular diagnostics. Preprocessed physiological data and optimized model performance to enhance AI-powered patient care solutions.
+        </p>
+      </div>
+    </div> 
+    <div class="item" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: 535px; margin-bottom: 50px; width: 700px; height: 200px;">
+       <!-- Left Section: Experience Name -->
+       <div class="item-text" style="margin-top: 10px; margin-left: -300px">
+        <h3 style="margin: 0;">Undergrad Computer Graphics TA</h3>
+        <p style="margin: 0;">Cornell Bowers CIS</p>
+      </div>
+      <!-- Right Section: Date and Location -->
+      <div class="item-date-location" style="text-align: right; margin-top: -150px; margin-bottom: 10px;margin-left: 450px">
+        <p style="margin: 0;"><strong>Aug 2024 – Dec 2024</strong></p>
+        <p style="margin: 0;">Ithaca, New York</p>
+      </div>
+      <div class="movable-image" style = "margin-left: 800px; margin-top: 565px; width: 800px; height: 500px; box-shadow: none;">
+        <img src="cg.png" alt="University Logo" class="item-image" style = "width: 200px; height: 179px; border-radius: 15px; margin-left: -1970px; margin-top: -120px">
+      </div>
+      <!-- Description Section -->
+      <div class="item-description" style="width: 100%; padding: 10px; text-align: left;">
+        <p style="margin: 0;">Taught ray tracing, constructive solid geometry (CSG), and animation with AniGraph, supporting students through assignments and office hours. Provided feedback to enhance understanding of advanced computer graphics concepts.
+        </p>
+      </div>
+    </div>
+    <div class = item style = "margin-left: 70px; margin-bottom: 50px; width: 700px; height: 200px">
+      <!-- Left Section: Experience Name -->
+      <div class="item-text" style="margin-top: 10px; margin-left: 10px">
+        <h3 style="margin: 0;">CompBio Software Research Assistant</h3>
+        <p style="margin: 0;">Musharoff Lab</p>
+      </div>
+      <!-- Right Section: Date and Location -->
+      <div class="item-date-location" style="text-align: right; margin-top: -150px; margin-bottom: 10px;margin-left: 470px">
+        <p style="margin: 0;"><strong>Oct 2024 – Present</strong></p>
+        <p style="margin: 0;">Ithaca, New York</p>
+      </div>
+      <div class="movable-image" style = "margin-left: 325px; margin-top: 115px; width: 800px; height: 500px">
+        <img src="compbio.png" alt="University Logo" class="item-image" style = "width: 200px; height: 179px; border-radius: 15px; margin-left: 365px; margin-top: -120px; box-shadow: none">
+      </div>
+      <!-- Description Section -->
+      <div class="item-description" style="width: 100%; padding: 10px; text-align: left;">
+        <p style="margin: 0;">Applied machine learning techniques to analyze the All of Us dataset, identifying diagnosis patterns across demographic groups. Developed software tools for data preprocessing, model training, and visualization to uncover population-specific health trends.
+        </p>
+      </div>
+    </div>
+    <div class = item style = "margin-left: 535px; margin-bottom: 50px; width: 700px; height: 200px">
+      <!-- Left Section: Experience Name -->
+      <div class="item-text" style="margin-top: 10px; margin-left: 10px">
+        <h3 style="margin: 0;">Computer Vision Research Assistant</h3>
+        <p style="margin: 0;">Cornell Computer Systems Laboratory</p>
+      </div>
+      <!-- Right Section: Date and Location -->
+      <div class="item-date-location" style="text-align: right; margin-top: -150px; margin-bottom: 10px;margin-left: 460px">
+        <p style="margin: 0;"><strong>Aug 2022 – Aug 2023</strong></p>
+        <p style="margin: 0;">Ithaca, New York</p>
+      </div>
+      <div class="movable-image" style = "margin-left: -850px; margin-top: 110px; width: 800px; height: 500px">
+        <img src="compvision.png" alt="University Logo" class="item-image" style = "width: 400px; height: 179px; border-radius: 15px; margin-left: 365px; margin-top: -120px; box-shadow: none">
+      </div>
+      <!-- Description Section -->
+      <div class="item-description" style="width: 100%; padding: 10px; text-align: left;">
+        <p style="margin: 0;">Developed computer vision models using YOLOv5 and PyTorch to analyze bee pollen data and coloration patterns. Implemented data preprocessing, model training, and evaluation pipelines to support insights into ecological and behavioral trends.
+        </p>
+      </div>
+    </div>
+    <div class = item style = "margin-left: 70px; width: 700px; height: 200px">
+      <!-- Left Section: Experience Name -->
+      <div class="item-text" style="margin-top: 10px; margin-left: 10px">
+        <h3 style="margin: 0;">Senior/Junior Corporate Relations</h3>
+        <p style="margin: 0;">Cornell Society of Women Engineers</p>
+      </div>
+      <!-- Right Section: Date and Location -->
+      <div class="item-date-location" style="text-align: right; margin-top: -150px; margin-bottom: 10px;margin-left: 460px">
+        <p style="margin: 0;"><strong>Aug 2023 – Present</strong></p>
+        <p style="margin: 0;">Ithaca, New York</p>
+      </div>
+      <div class="movable-image" style = "margin-left: 330px; margin-top: 105px; width: 800px; height: 500px">
+        <img src="cr.png" alt="University Logo" class="item-image" style = "width: 200px; height: 200px; border-radius: 15px; margin-left: 365px; margin-top: -120px; box-shadow: none">
+      </div>
+      <!-- Description Section -->
+      <div class="item-description" style="width: 100%; padding: 10px; text-align: left;">
+        <p style="margin: 0;">Managed corporate partnerships and organized professional events as Senior and Junior Corporate Relations Officer for Cornell Society of Women Engineers. Coordinated sponsorships and strengthened relationships with partners.
+        </p>
+      </div>
+    </div>
+    <div class = item style = "margin-left: 535px; width: 700px; height: 200px; margin-top: 50px">
+      <!-- Left Section: Experience Name -->
+      <div class="item-text" style="margin-top: 10px; margin-left: 10px">
+        <h3 style="margin: 0;">Machine Learning Engineer</h3>
+        <p style="margin: 0;">Cornell Data Science Project Team</p>
+      </div>
+      <!-- Right Section: Date and Location -->
+      <div class="item-date-location" style="text-align: right; margin-top: -150px; margin-bottom: 10px;margin-left: 460px">
+        <p style="margin: 0;"><strong>Feb 2022 – Present</strong></p>
+        <p style="margin: 0;">Ithaca, New York</p>
+      </div>
+      <div class="movable-image" style = "margin-left: -850px; margin-top: 95px; width: 800px; height: 500px">
+        <img src="mle.png" alt="University Logo" class="item-image" style = "width: 200px; height: 200px; border-radius: 15px; margin-left: 365px; margin-top: -120px; box-shadow: none">
+      </div>
+      <!-- Description Section -->
+      <div class="item-description" style="width: 100%; padding: 10px; text-align: left;">
+        <p style="margin: 0;">Optimized machine learning models for data-driven projects and collaborated on scalable solutions. Conducted data preprocessing, feature engineering, and analysis to ensure efficient model training.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" style="height: 1px; margin-top: -20px; margin-bottom: -80px"></div>
+
+  <section id="skills" class="experience-page">
+    <section class="experience">
+      <h1>Skills</h1>
+      <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; margin-top: 20px;">
+  
+        <!-- Graph 1 -->
+        <div style="display: flex; flex-direction: column; align-items: center; width: 33%; margin-left: 40px;">
+          <h2 style="
+          display: inline-block;
+          background-color: #f0f0f0;
+          padding: 10px 20px;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+          text-align: center;
+          margin-left: -41%;
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);">
+          Programming Languages
+        </h2>
+
+          <img src="programming_radar_graph.png" alt="Programming Radar Graph" style="max-width: 200%; height: auto; margin-right: 50%">
         </div>
-        <div class="item">
-          <!-- Content for second item (B.S. in Computer Science) -->
+  
+        <!-- Graph 2 -->
+        <div style="display: flex; flex-direction: column; align-items: center; width: 33%; margin-left: 200px; margin-right: -90px">
+          <h2 style="
+          display: inline-block;
+          background-color: #f0f0f0;
+          padding: 10px 20px;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+          text-align: center;
+          margin-left: -33%;
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);">
+          Engineering Essentials
+        </h2>
+          <img src="engineering_essentials.png" alt="Machine Learning Radar Graph" style="max-width: 200%; height: auto; margin-right: 50%">
+        </div>
+  
+        <!-- Graph 3 -->
+        <div style="display: flex; flex-direction: column; align-items: center; width: 33%; margin-left: 50%; transform: translateX(-50%); margin-top: 20 px; margin-top: 50px">
+          <h2 style="
+          display: inline-block;
+          background-color: #f0f0f0;
+          padding: 10px 20px;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+          text-align: center;
+          margin-left: -50%;
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);">
+          Soft Skills
+        </h2>
+          <img src="soft_skills.png" alt="Web Development Radar Graph" style="max-width: 200%; height: auto; margin-right: 50%">
         </div>
       </div>
     </section>
   </section>
+  
+    
+  <div class="section-divider" style="height: 1px; margin-top: 0px; margin-bottom: -80px"></div>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h1>Technical Competencies</h1>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h2>Languages</h2>
-        <p>Python, Solidity, C++, Java, C, JavaScript, Bash, MySQL, Oracle PL/SQL, Assembly, HTML, CSS, JSON, YAML, MATLAB</p>
+  <section id="projects" class="projects-page">
+    <section class="projects">
+      <h1 style = "margin-bottom: 0px">Projects</h1>
+    </section>
+    <div class="carousel" style = "margin-bottom: -20px">
+      <div class="project" style="height: 450px; text-align: left">
+        <h2 style = "text-align: center; margin-top: 25px">CookCraft: AI Recipe Recommendation App</h2>
+        <ul style = "margin-left: 30px; margin-top: 35px; width: 400px">
+          <li><strong>YOLOv5 for Grocery Identification:</strong> Employs YOLOv5 to detect and label ingredients from images, enabling accurate virtual pantry creation.</li>
+          <li style = "margin-top: 5px"><strong>NLP for Recipe Personalization:</strong> Uses NLP with cosine similarity to rank recipes based on user preferences and past interactions.</li>
+          <li style = "margin-top: 5px"><strong>Adaptive Re-ranking with Machine Learning:</strong> Implements linear regression to refine recipe rankings dynamically through user feedback.</li>
+          <li style = "margin-top: 5px"><strong>Unified AI System:</strong> Integrates computer vision, NLP, and machine learning for efficient, personalized meal planning.</li>
+        </ul>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="Cropped_Image.png" alt="University Logo" class="item-image" style = "border-radius: 15px; width: 200px; height: 200px; margin-top: -140px; margin-right: -40px">
+        </div>
       </div>
-      <div class="project-card">
-        <h2>Coding Methodologies</h2>
-        <p>Test-Driven Development, OWASP security knowledge, Agile, Clean Code, Useful Comments, Ability to adhere to ISO and other standards</p>
+      <div class="project" style="height: 450px; text-align: left">
+        <h2 style = "text-align: center; margin-top: 10px">BluBop: Earthquake Detection Robot</h2>
+        <ul style = "width: 455px; margin-left: 30px; margin-top: 25px">
+          <li><strong>Overview:</strong> BluBop, programmed in C, is a joystick-controlled robot that stops for vibrations, ensuring safety during earthquakes, and performs a "dance" after detecting repeated vibrations.</li>
+          <li><strong>Implementation:</strong> Uses ADC and PWM for joystick-driven motor control and vibration detection, with custom libraries and logic for precise signal handling.</li>
+          <li><strong>Hardware Integration:</strong> Features a joystick for directional input, a vibration sensor for safety triggers, and servo motors controlled via PWM, all powered through a single microcontroller board.</li>
+          <li><strong>Testing:</strong> Verified joystick, motor, and vibration functionality through physical trials and debugging of ADC/PWM configurations.</li>
+        </ul>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="blubop.png" alt="University Logo" class="item-image" style = "border-radius: 15px; width: 200px; height: 200px; margin-top: -140px; margin-right: -100px">
+        </div>
       </div>
-      <div class="project-card">
-        <h2>Project Management</h2>
-        <p>SCRUM, Maven, GitHub, Jupyter Notebooks, Kanban, Presentation Skills, Team Leadership/Management, Cross-Team Communication</p>
+      <div class="project" style="height: 450px; text-align: left">
+        <h2 style = "text-align: center; margin-top: 10px;">Interstellar Maze: Procedural Labyrinth and Dynamic Gameplay</h2>
+        <ul style = "width: 400px; margin-left: 40px; margin-top: 25px">
+          <li><strong>Maze Generation and Rendering:</strong> Procedurally generates mazes with dynamic textures like mirrored floors and overhead camera projections using multi-pass shaders.</li>
+          <li><strong>Player Movement and Interaction:</strong> Smooth movement, jumping with physics, and collision detection for walls and treasure tokens.</li>
+          <li><strong>Game Logic:</strong> Collectible gold tokens and a dynamic congratulatory message at the randomized exit upon completion.</li>
+          <li><strong>Collaborative Effort:</strong> Contributions include terrain generation, advanced rendering, collision detection, and game logic.</li>
+        </ul>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="maze.png" alt="University Logo" class="item-image" style = "border-radius: 15px; width: 200px; height: 200px; margin-top: -140px; margin-right: -50px">
+        </div>
       </div>
-      <div class="project-card">
-        <h2>Interests</h2>
-        <p>Software Engineering, Cyber-Security, Machine Learning, Data Visualization, Artificial Intelligence, Blockchain, Cryptocurrency</p>
+      <div class="project" style="height: 450px; text-align: left">
+        <h2 style = "text-align: center; margin-top: 10px;">Sketchify: ML Coloring Book</h2>
+        <ul style = "width: 400px; margin-left: 40px; margin-top: 25px">
+          <li><strong>Overview:</strong> Sketchify is an ML-powered system that converts images into coloring book pages using segmentation, edge detection, smoothing, and SVG conversion for infinite resolution.</li>
+          <li><strong>Advanced Segmentation:</strong> Uses Meta’s Segment Anything Model to isolate subjects from images without additional training.</li>
+          <li><strong>Edge Detection and Smoothing:</strong> Combines Canny and TEED detection with OpenCV techniques to refine edges by denoising and connecting contours.</li>
+          <li><strong>SVG Conversion:</strong> Employs VTracer to transform refined edges into smooth, scalable vector paths with infinite resolution.</li>
+      </ul>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="bear.png" alt="University Logo" class="item-image" style = "border-radius: 15px; width: 300px; height: 200px; margin-top: -140px; margin-right: -50px">
+        </div>
       </div>
-      <div class="project-card">
-        <h2>Relevant Courses</h2>
-        <p>Data Structures, Object Oriented Design, Operating Systems, Machine Learning, Systems Security</p>
-      </div>
-      <div class="project-card">
-        <h2>Development</h2>
-        <p>Linux, Windows, Docker, React, Kubernetes, Matplotlib, Pandas, Tensorflow, GPT, Generative AI Tools</p>
+      <div class="project" style="height: 450px; text-align: left">
+        <h2 style = "text-align: center; margin-top: 10px;">MathSearch</h2>
+        <ul style = "width: 420px; margin-left: 30px; margin-top: 25px">
+          <li>
+            <strong>Overview:</strong> MathSearch is a scalable search engine that finds and matches mathematical equations in academic papers using advanced machine learning techniques.
+          </li>
+          <li>
+              <strong>Core Features:</strong> Utilizes YOLOv5 for equation detection, VGG-16 for similarity scoring, and a user-friendly interface supporting live LaTeX queries and multi-PDF uploads.
+          </li>
+          <li>
+              <strong>Implementation:</strong> Leverages an S3-based queueing system, intermediaries for seamless integration, and bounding box visualizations to display detected equations on PDFs.
+          </li>
+          <li>
+              <strong>User Interaction:</strong> Provides an intuitive UI for uploading documents, rendering search results with bounding boxes, and navigating matched equations effortlessly.
+          </li>
+      </ul>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -90px">
+          <img src="mathsearch.png" alt="University Logo" class="item-image" style = "border-radius: 15px; width: 300px; height: 150px; margin-top: -140px; margin-right: -50px">
+        </div>
       </div>
     </div>
   </section>
 
-<!-- Hobbies Section -->
-<section id="hobbies">
-  <h1>Hobbies & Interests</h1>
-  <div class="carousel">
-    <div class="hobby-card">
-      <h2>Rock Climbing</h2>
-      <p>I enjoy solving climbing problems and spending time outdoors.</p>
-    </div>
-    <div class="hobby-card">
-      <h2>Reading</h2>
-      <p>From technical papers to novels, I find joy in learning and exploring new ideas.</p>
-    </div>
-    <div class="hobby-card">
-      <h2>Singing</h2>
-      <p>Music helps me relax and stay creative; I love performing for friends and family.</p>
-    </div>
-  </div>
-</section>
+  <div class="section-divider" style="height: 1px; margin-top: 0px; margin-bottom: -80px"></div>
+
+  <section id="hobbies" class="hobbies-page">
+    <section class="hobbies">
+      <h1 style = "margin-top: 5px">Hobbies</h1>
+      <div class="item" style = "width: 250px; height: 430px; margin-top: 40px; margin-left: -30px">
+        <h3 style = "margin-left: 30px">Rock Climbing</h3>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="rockclimbing.jpg" alt="University Logo" class="item-image" style = "width: 150px; height: 200px; margin-top: 140px; margin-left: 27px;">
+        </div>
+        <ul style = "text-align: left; margin-left: 10px;">
+          <li style = "margin-top: 5px">Supervisor at school rock climbing gym</li>
+          <li style = "margin-top: 5px">PE Instructor</li>
+          <li style = "margin-top: 5px">Climb 2 times a week</li>
+          <li style = "margin-top: 5px">Toprope and Lead Certified</li>
+        </ul>
+      </div>
+      <div class="item" style = "width: 250px; height: 430px; margin-top: -430px; margin-left: 280px">
+        <h3 style = "margin-left: 62px">Dancing</h3>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="dance3.png" alt="University Logo" class="item-image" style = "width: 200px; height: 200px; margin-top: 140px; margin-left: 5px;">
+        </div>
+        <ul style = "text-align: left; margin-left: 10px;">
+          <li style = "margin-top: 5px">School Dance Group: "LOKO"</li>
+          <li style = "margin-top: 5px">Danced for 3 Years</li>
+          <li style = "margin-top: 5px">Mainly Hip Hop</li>
+          <li style = "margin-top: 5px">Quick to pick up choreography</li>
+        </ul>
+      </div>
+      <div class="item" style = "width: 250px; height: 430px; margin-top: -430px; margin-left: 590px">
+        <h3 style = "margin-left: 53px">Ping Pong</h3>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="pingpong.jpg" alt="University Logo" class="item-image" style = "width: 240px; height: 190px; margin-top: 145px; margin-left: -17px;">
+        </div>
+        <ul style = "text-align: left; margin-left: 10px;">
+          <li style = "margin-top: 5px">Played for 10 years</li>
+          <li style = "margin-top: 5px">School club team for one semester</li>
+          <li style = "margin-top: 5px">Play 2 times a week</li>
+          <li style = "margin-top: 5px">Nickname: "Chopper"</li>
+        </ul>
+      </div>
+      <div class="item" style = "width: 250px; height: 430px; margin-top: -430px; margin-left: 900px; margin-bottom: -50px">
+        <h3 style = "margin-left: 20px">Watching Movies</h3>
+        <div class="item-image-wrapper" style = "margin-right: -5px; margin-top: -120px">
+          <img src="movie.png" alt="University Logo" class="item-image" style = "width: 200px; height: 200px; margin-top: 145px; margin-left: 5px;">
+        </div>
+        <ul style = "text-align: left; margin-left: 10px;">
+          <li style = "margin-top: 5px">Watched 1000+ Movies</li>
+          <li style = "margin-top: 5px">Rewatched all movies at least 3 times</li>
+          <li style = "margin-top: 5px">Current Favorite Movie & Genre: "Wild Robot" & Sci-Fi</li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
 
 <!-- Include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -241,14 +506,15 @@
 
 <script>
   $(document).ready(function(){
-    // Initialize carousel for Hobbies
     $('.carousel').slick({
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       adaptiveHeight: true,
-      arrows: true
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev" style = "left: -65px"><span>&lt;</span></button>',
+      nextArrow: '<button type="button" class="slick-next"><span>&gt;</span></button>'
     });
   });
 </script>

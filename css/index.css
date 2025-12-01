@@ -833,3 +833,21 @@ body {
   height: 50px;
   cursor: grab;
 }
+
+.slick-prev,
+.slick-next {
+  background: none;       
+  border: none;           
+  border-radius: 0;       
+  width: auto;            
+  height: auto;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: none;
+}

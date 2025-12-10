@@ -34,7 +34,7 @@ html {
   align-items: right;
   padding: 20px 500px;
   background-color: white;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc !important;
   z-index: 10;
 }
 
@@ -179,7 +179,7 @@ html {
 }
 
 .photo-caption {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
@@ -638,6 +638,7 @@ body {
 
 .start-browsing {
   font-size: 18px;
+  margin-top: 23px;
   color: black;
   text-decoration: none;
   display: inline-flex;
@@ -850,4 +851,16 @@ body {
 .slick-prev::before,
 .slick-next::before {
   content: none;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 20px 500px;
+  background-color: white;
+  border-bottom: 2.2px solid #ccc !important;
+  z-index: 10;
 }
